@@ -1,0 +1,92 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Helper function to check user role
+    function isAuthorized(roles) {
+      return request.auth != null && 
+        get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role in roles;
+    }
+    
+    // Students collection
+    match /students/{studentId} {
+      // Anyone can create (for public registration)
+      allow create: if true;
+      
+      // Directors, admin, headmaster, bursar can read/write everything
+      allow read, write: if isAuthorized(['director', 'admin', 'headmaster', 'bursar']);
+      
+      // Teachers can read student info
+      allow read: if isAuthorized(['teacher']);
+      
+      // Parents can read their own child's data
+      allow read: if request.auth != null && 
+        resource.data.parent.email == request.auth.token.email;
+      
+      // Students can read their own data
+      allow read: if request.auth != null && 
+        resource.data.studentEmail == request.auth.token.email;
+    }
+    
+    // Users collection
+    match /users/{userId} {
+      // Users can read their own profile
+      allow read: if request.auth != null && request.auth.uid == userId;
+      
+      // Only directors and admin can write
+      allow write: if isAuthorized(['director', 'admin']);
+    }
+    
+    // Payments collection
+    match /payments/{paymentId} {
+      // Anyone authenticated can read payments
+      allow read: if request.auth != null;
+      
+      // Only bursar, director, admin can create payments
+      allow create: if isAuthorized(['bursar', 'director', 'admin']);
+      
+      // No one can delete or modify payments (audit trail)
+      allow update, delete: if false;
+    }
+    
+    // Meal transactions
+    match /mealTransactions/{transactionId} {
+      allow read: if request.auth != null;
+      allow create: if isAuthorized(['bursar', 'receptionist', 'director', 'admin']);
+      allow update, delete: if false; // Immutable for audit
+    }
+    
+    // Daily reports
+    match /dailyReports/{reportId} {
+      // Anyone authenticated can read
+      allow read: if request.auth != null;
+      
+      // Teachers, headmaster, directors can write
+      allow write: if isAuthorized(['teacher', 'headmaster', 'director', 'admin']);
+    }
+    
+    // Incidents
+    match /incidents/{incidentId} {
+      // Anyone authenticated can read
+      allow read: if request.auth != null;
+      
+      // Teachers, headmaster, directors can create
+      allow create: if isAuthorized(['teacher', 'headmaster', 'director', 'admin']);
+      
+      // Only directors can delete incidents
+      allow delete: if isAuthorized(['director', 'admin']);
+    }
+    
+    // Attendance records
+    match /attendance/{attendanceId} {
+      allow read: if request.auth != null;
+      allow create, update: if isAuthorized(['teacher', 'receptionist', 'headmaster', 'director', 'admin']);
+    }
+    
+    // Meetings
+    match /meetings/{meetingId} {
+      allow read: if request.auth != null;
+      allow write: if isAuthorized(['director', 'admin', 'headmaster']);
+    }
+  }
+}

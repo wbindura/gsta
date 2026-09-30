@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration - Southlea Park Technical Academy</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo">🏫</span>
+                <span class="brand-name">SPTA Registration</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">← Back to Home</a>
+                <a href="login.html">Portal Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Registration Form -->
+    <section class="section">
+        <div class="container">
+            <div class="form-card" style="max-width: 900px; margin: 0 auto;">
+                <h1 class="section-title">Student Registration 2026</h1>
+                <p style="text-align: center; margin-bottom: 30px; color: #718096;">
+                    Please fill in all required information accurately. Fields marked with * are mandatory.
+                </p>
+
+                <form id="registrationForm">
+                    <!-- Student Information -->
+                    <h2 style="color: var(--primary); margin-bottom: 20px;">📋 Student Information</h2>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>First Name *</label>
+                            <input type="text" name="firstName" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Middle Name</label>
+                            <input type="text" name="middleName" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name *</label>
+                            <input type="text" name="lastName" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>Date of Birth *</label>
+                            <input type="date" name="dob" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Gender *</label>
+                            <select name="gender" class="form-control" required>
+                                <option value="">Select Gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>National ID Number</label>
+                            <input type="text" name="nationalId" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Residential Address *</label>
+                        <textarea name="address" class="form-control" rows="2" required></textarea>
+                    </div>
+
+                    <!-- Academic Information -->
+                    <h2 style="color: var(--primary); margin: 30px 0 20px;">🎓 Academic Information</h2>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>Applying for Form *</label>
+                            <select name="form" class="form-control" id="formSelect" required>
+                                <option value="">Select Form</option>
+                                <option value="Form 1">Form 1</option>
+                                <option value="Form 2">Form 2</option>
+                                <option value="Form 3">Form 3</option>
+                                <option value="Form 4">Form 4</option>
+                                <option value="Form 5">Form 5 (A-Level)</option>
+                                <option value="Form 6">Form 6 (A-Level)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Previous School</label>
+                            <input type="text" name="previousSchool" class="form-control">
+                        </div>
+                    </div>
+
+                    <!-- Parent/Guardian Information -->
+                    <h2 style="color: var(--primary); margin: 30px 0 20px;">👨‍👩‍👧 Parent/Guardian Information</h2>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>Parent/Guardian Full Name *</label>
+                            <input type="text" name="parentName" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Relationship to Student *</label>
+                            <select name="relationship" class="form-control" required>
+                                <option value="">Select Relationship</option>
+                                <option value="Mother">Mother</option>
+                                <option value="Father">Father</option>
+                                <option value="Guardian">Guardian</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>Primary Phone Number *</label>
+                            <input type="tel" name="primaryPhone" class="form-control" placeholder="+263" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Alternative Phone Number</label>
+                            <input type="tel" name="alternativePhone" class="form-control" placeholder="+263">
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address *</label>
+                            <input type="email" name="email" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Parent/Guardian Address</label>
+                        <textarea name="parentAddress" class="form-control" rows="2"></textarea>
+                    </div>
+
+                    <!-- Emergency Contact -->
+                    <h2 style="color: var(--primary); margin: 30px 0 20px;">🚨 Emergency Contact</h2>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>Emergency Contact Name *</label>
+                            <input type="text" name="emergencyName" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Emergency Contact Phone *</label>
+                            <input type="tel" name="emergencyPhone" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Relationship</label>
+                            <input type="text" name="emergencyRelationship" class="form-control">
+                        </div>
+                    </div>
+
+                    <!-- Medical Information -->
+                    <h2 style="color: var(--primary); margin: 30px 0 20px;">🏥 Medical Information</h2>
+                    <div class="form-group">
+                        <label>Known Allergies (if any)</label>
+                        <textarea name="allergies" class="form-control" rows="2" placeholder="List any known allergies"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Medical Conditions (if any)</label>
+                        <textarea name="medicalConditions" class="form-control" rows="2" placeholder="List any chronic conditions or special medical needs"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Current Medications (if any)</label>
+                        <textarea name="medications" class="form-control" rows="2" placeholder="List any medications the student takes regularly"></textarea>
+                    </div>
+
+                    <!-- Additional Services -->
+                    <h2 style="color: var(--primary); margin: 30px 0 20px;">🚌 Additional Services</h2>
+                    <div class="form-group">
+                        <label style="display: flex; align-items: center; gap: 10px;">
+                            <input type="checkbox" name="requiresTransport" id="transportCheckbox" value="yes">
+                            <span>Require school transport ($1/day)</span>
+                        </label>
+                    </div>
+
+                    <div id="transportDetails" style="display: none; margin-top: 20px; padding: 20px; background: var(--light); border-radius: 10px;">
+                        <h3 style="margin-bottom: 15px;">Transport Details</h3>
+                        <div class="form-group">
+                            <label>Pick-up Location *</label>
+                            <input type="text" name="pickupLocation" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Drop-off Location *</label>
+                            <input type="text" name="dropoffLocation" class="form-control">
+                        </div>
+                    </div>
+
+                    <!-- Fee Summary -->
+                    <h2 style="color: var(--primary); margin: 30px 0 20px;">💰 Fee Summary</h2>
+                    <div style="background: var(--light); padding: 25px; border-radius: 15px; margin-bottom: 30px;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                            <span>Registration Fee (One-time):</span>
+                            <strong>$50.00</strong>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                            <span id="tuitionLabel">Tuition Fee (Per Term):</span>
+                            <strong id="tuitionAmount">$200.00</strong>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                            <span>Tablet (One-time):</span>
+                            <strong>$150.00</strong>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                            <span>Transport (Optional - Per day):</span>
+                            <strong>$1.00</strong>
+                        </div>
+                        <hr style="margin: 15px 0;">
+                        <div style="display: flex; justify-content: space-between; font-size: 1.3rem;">
+                            <strong>Total Due at Registration:</strong>
+                            <strong id="totalAmount" style="color: var(--primary);">$400.00</strong>
+                        </div>
+                        <p style="margin-top: 15px; font-size: 0.9rem; color: #718096;">
+                            * Meal account can be topped up separately (Breakfast: $1, Break: $0.50, Lunch: $2)
+                        </p>
+                    </div>
+
+                    <!-- Terms and Conditions -->
+                    <div class="form-group">
+                        <label style="display: flex; align-items: start; gap: 10px;">
+                            <input type="checkbox" name="termsAccepted" required style="margin-top: 5px;">
+                            <span>I confirm that all information provided is accurate and I accept the terms and conditions of Southlea Park Technical Academy *</span>
+                        </label>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div style="text-align: center; margin-top: 30px;">
+                        <button type="submit" class="btn btn-primary btn-large" id="submitBtn">
+                            Complete Registration
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Modal (hidden by default) -->
+    <div id="successModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <div style="text-align: center;">
+                <div style="font-size: 4rem; margin-bottom: 20px;">✅</div>
+                <h2 style="color: var(--success); margin-bottom: 20px;">Registration Successful!</h2>
+                <p style="margin-bottom: 20px;">Student ID: <strong id="studentId"></strong></p>
+                
+                <div id="qrCodeContainer" style="margin: 30px 0;">
+                    <p style="margin-bottom: 15px;"><strong>Student QR Code:</strong></p>
+                    <div id="qrcode" style="display: flex; justify-content: center;"></div>
+                </div>
+
+                <div class="alert alert-info" style="text-align: left; margin: 20px 0;">
+                    <strong>Next Steps:</strong>
+                    <ol style="margin-left: 20px; margin-top: 10px;">
+                        <li>Download and print the QR code card</li>
+                        <li>Complete payment at the school bursar's office</li>
+                        <li>Bring required documents for verification</li>
+                        <li>Attend orientation on specified date</li>
+                    </ol>
+                </div>
+
+                <div style="display: flex; gap: 15px; justify-content: center; margin-top: 30px;">
+                    <button onclick="downloadQRCode()" class="btn btn-primary">Download QR Card</button>
+                    <button onclick="window.location.href='index.html'" class="btn btn-secondary">Back to Home</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase -->
+    <script type="module">
+        import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js';
+        import { getFirestore, collection, addDoc, serverTimestamp } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js';
+
+        // Firebase configuration (YOU NEED TO REPLACE WITH YOUR CONFIG)
+        const firebaseConfig = {
+  apiKey: "AIzaSyC9zaXtZav45T_l2jYP4ceX2sbwJHCL7ek",
+  authDomain: "southlea-park-academy.firebaseapp.com",
+  projectId: "southlea-park-academy",
+  storageBucket: "southlea-park-academy.firebasestorage.app",
+  messagingSenderId: "378212807524",
+  appId: "1:378212807524:web:45d750c99c1bb04554c071"
+};
+
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+
+        // Update tuition fee based on form selection
+        document.getElementById('formSelect').addEventListener('change', function() {
+            const form = this.value;
+            const tuitionAmount = document.getElementById('tuitionAmount');
+            const totalAmount = document.getElementById('totalAmount');
+            
+            if (form === 'Form 5' || form === 'Form 6') {
+                tuitionAmount.textContent = '$300.00';
+                totalAmount.textContent = '$500.00';
+            } else {
+                tuitionAmount.textContent = '$200.00';
+                totalAmount.textContent = '$400.00';
+            }
+        });
+
+        // Toggle transport details
+        document.getElementById('transportCheckbox').addEventListener('change', function() {
+            const transportDetails = document.getElementById('transportDetails');
+            transportDetails.style.display = this.checked ? 'block' : 'none';
+        });
+
+        // Form submission
+        document.getElementById('registrationForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const submitBtn = document.getElementById('submitBtn');
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Processing...';
+
+            try {
+                // Collect form data
+                const formData = new FormData(this);
+                const studentData = {
+                    personalInfo: {
+                        firstName: formData.get('firstName'),
+                        middleName: formData.get('middleName'),
+                        lastName: formData.get('lastName'),
+                        fullName: `${formData.get('firstName')} ${formData.get('middleName')} ${formData.get('lastName')}`.replace('  ', ' '),
+                        dob: formData.get('dob'),
+                        gender: formData.get('gender'),
+                        nationalId: formData.get('nationalId'),
+                        address: formData.get('address')
+                    },
+                    academic: {
+                        form: formData.get('form'),
+                        previousSchool: formData.get('previousSchool'),
+                        academicYear: '2026'
+                    },
+                    parent: {
+                        name: formData.get('parentName'),
+                        relationship: formData.get('relationship'),
+                        primaryPhone: formData.get('primaryPhone'),
+                        alternativePhone: formData.get('alternativePhone'),
+                        email: formData.get('email'),
+                        address: formData.get('parentAddress')
+                    },
+                    emergency: {
+                        name: formData.get('emergencyName'),
+                        phone: formData.get('emergencyPhone'),
+                        relationship: formData.get('emergencyRelationship')
+                    },
+                    medical: {
+                        allergies: formData.get('allergies'),
+                        conditions: formData.get('medicalConditions'),
+                        medications: formData.get('medications')
+                    },
+                    services: {
+                        transport: formData.get('requiresTransport') === 'yes',
+                        pickupLocation: formData.get('pickupLocation'),
+                        dropoffLocation: formData.get('dropoffLocation')
+                    },
+                    fees: {
+                        registrationFee: 50,
+                        tuitionFee: formData.get('form').includes('5') || formData.get('form').includes('6') ? 300 : 200,
+                        tabletFee: 150,
+                        totalDue: formData.get('form').includes('5') || formData.get('form').includes('6') ? 500 : 400,
+                        status: 'Pending'
+                    },
+                    mealAccount: {
+                        balance: 0,
+                        transactions: []
+                    },
+                    registrationDate: serverTimestamp(),
+                    status: 'Registered - Pending Payment'
+                };
+
+                // Save to Firestore
+                const docRef = await addDoc(collection(db, 'students'), studentData);
+                const studentId = `SPTA-2026-${docRef.id.substring(0, 8).toUpperCase()}`;
+
+                // Update document with generated ID
+                // await updateDoc(docRef, { studentId: studentId });
+
+                // Show success modal FIRST
+                document.getElementById('studentId').textContent = studentId;
+                document.getElementById('successModal').style.display = 'flex';
+
+                // Store student info
+                window.currentStudentId = studentId;
+                window.currentStudentName = studentData.personalInfo.fullName;
+
+                // Generate QR Code (after modal is shown)
+                const qrData = JSON.stringify({
+                    id: studentId,
+                    name: studentData.personalInfo.fullName,
+                    form: studentData.academic.form
+                });
+
+                const qrCodeDiv = document.getElementById('qrcode');
+                qrCodeDiv.innerHTML = '<p>Generating QR Code...</p>';
+                
+                // Import QRCode dynamically
+                const script = document.createElement('script');
+                script.src = 'https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js';
+                script.onload = function() {
+                    qrCodeDiv.innerHTML = ''; // Clear loading message
+                    const canvas = document.createElement('canvas');
+                    window.QRCode.toCanvas(canvas, qrData, {
+                        width: 300,
+                        margin: 2,
+                        color: {
+                            dark: '#667eea',
+                            light: '#ffffff'
+                        }
+                    }, function(error) {
+                        if (error) {
+                            console.error('QR Error:', error);
+                            qrCodeDiv.innerHTML = '<p style="color: red;">QR Code generation failed. Student registered successfully!</p>';
+                        } else {
+                            qrCodeDiv.appendChild(canvas);
+                        }
+                    });
+                };
+                script.onerror = function() {
+                    qrCodeDiv.innerHTML = '<p style="color: red;">Could not load QR library. Student registered successfully!</p>';
+                };
+                document.head.appendChild(script);
+
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Registration failed. Please try again or contact the school office.');
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Complete Registration';
+            }
+        });
+
+        // Download QR Code Card
+        window.downloadQRCode = function() {
+            const canvas = document.querySelector('#qrcode canvas');
+            if (canvas) {
+                // Create a new canvas with the ID card design
+                const cardCanvas = document.createElement('canvas');
+                cardCanvas.width = 600;
+                cardCanvas.height = 400;
+                const ctx = cardCanvas.getContext('2d');
+
+                // Background
+                ctx.fillStyle = '#ffffff';
+                ctx.fillRect(0, 0, 600, 400);
+
+                // Header
+                const gradient = ctx.createLinearGradient(0, 0, 600, 100);
+                gradient.addColorStop(0, '#667eea');
+                gradient.addColorStop(1, '#764ba2');
+                ctx.fillStyle = gradient;
+                ctx.fillRect(0, 0, 600, 100);
+
+                // School name
+                ctx.fillStyle = '#ffffff';
+                ctx.font = 'bold 28px Arial';
+                ctx.textAlign = 'center';
+                ctx.fillText('Southlea Park Technical Academy', 300, 45);
+                ctx.font = '16px Arial';
+                ctx.fillText('Student ID Card', 300, 75);
+
+                // Student info
+                ctx.fillStyle = '#2d3748';
+                ctx.font = 'bold 24px Arial';
+                ctx.textAlign = 'left';
+                ctx.fillText(window.currentStudentName, 30, 150);
+                
+                ctx.font = '18px Arial';
+                ctx.fillText(`ID: ${window.currentStudentId}`, 30, 185);
+
+                // QR Code
+                ctx.drawImage(canvas, 320, 120, 250, 250);
+
+                // Footer
+                ctx.font = '14px Arial';
+                ctx.fillStyle = '#718096';
+                ctx.textAlign = 'center';
+                ctx.fillText('Present this card for entry and attendance', 300, 390);
+
+                // Download
+                const link = document.createElement('a');
+                link.download = `SPTA-ID-${window.currentStudentId}.png`;
+                link.href = cardCanvas.toDataURL();
+                link.click();
+            }
+        };
+    </script>
+
+    <style>
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            max-width: 600px;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+
+        @media (max-width: 768px) {
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</body>
+</html>

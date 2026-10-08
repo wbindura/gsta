@@ -1,25 +1,36 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Southlea Park Technical Academy - From Knowledge to Wealth Creation</title>
+    <title>Grace Southlea Park Technical College - From Knowledge to Wealth Creation</title>
+    <!-- Central Stylesheet -->
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome 6 Vector Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Top Announcement Alert -->
+    <div class="top-alert-bar">
+        <span><i class="fa-solid fa-bullhorn"></i> Day School Launch 2027 Enrollment Open | Boarding Suites Available by Inquiry | Venue Hire Bookings Open</span>
+        <a href="#admissions">Secure Place &rarr;</a>
+    </div>
+
+    <!-- Navigation (Streamlined to 5 Clean Links) -->
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">
-                <span class="logo">🏫 SPTA</span>
-                <span class="brand-name">Southlea Park Technical Academy</span>
+                <span class="logo"><i class="fa-solid fa-graduation-cap" style="color: var(--primary);"></i></span>
+                <span class="brand-name">Grace Southlea Park Technical College</span>
             </div>
             <div class="nav-links">
                 <a href="#about">About</a>
-                <a href="#programs">Programs</a>
-                <a href="#facilities">Facilities</a>
+                <a href="#programs">Academics</a>
+                <a href="#curriculum">Subjects & Skills</a>
+                <a href="venue-hire.html">Venue & Event Hire</a>
+                <a href="#facilities">Campus Facilities</a>
                 <a href="#admissions">Admissions</a>
-                <a href="#contact">Contact</a>
+                <a href="login.html" class="btn-portal">Portal Login</a>
                 <a href="register.html" class="btn-register">Apply Now</a>
             </div>
         </div>
@@ -30,164 +41,228 @@
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <h1>From Knowledge to Wealth Creation</h1>
-            <p class="tagline">Empowering Zimbabwe's Future Through Excellence in Education & Practical Skills</p>
+            <p class="tagline">Empowering Zimbabwe's Future Through Full ZIMSEC Academic Rigor, Cambridge Electives, Practical Technical Manufacturing & Secondary Vocational Excellence</p>
             <div class="hero-buttons">
-                <a href="register.html" class="btn btn-primary">Apply for 2026</a>
-                <a href="#programs" class="btn btn-secondary">Explore Programs</a>
+                <a href="register.html" class="btn btn-primary">Enroll for Form 1 - 4</a>
+                <a href="#curriculum" class="btn btn-secondary">Explore Subjects & Trades</a>
             </div>
             <div class="hero-features">
                 <div class="feature-box">
-                    <span class="feature-icon">🍽️</span>
+                    <span class="feature-icon"><i class="fa-solid fa-utensils"></i></span>
                     <span>3 Meals Daily</span>
                 </div>
                 <div class="feature-box">
-                    <span class="feature-icon">💻</span>
-                    <span>Digital Learning</span>
+                    <span class="feature-icon"><i class="fa-solid fa-tablet-screen-button"></i></span>
+                    <span>Digital Learning & Tablets</span>
                 </div>
                 <div class="feature-box">
-                    <span class="feature-icon">🌍</span>
-                    <span>International Syllabus</span>
+                    <span class="feature-icon"><i class="fa-solid fa-solar-panel"></i></span>
+                    <span>100% Solar & Borehole</span>
                 </div>
                 <div class="feature-box">
-                    <span class="feature-icon">🚌</span>
-                    <span>Transport Available</span>
+                    <span class="feature-icon"><i class="fa-solid fa-bus"></i></span>
+                    <span>Safe Transport Available</span>
+                </div>
+                <div class="feature-box">
+                    <span class="feature-icon"><i class="fa-solid fa-earth-africa"></i></span>
+                    <span>Global Educational Tours</span>
+                </div>
+                <div class="feature-box">
+                    <span class="feature-icon"><i class="fa-solid fa-bed"></i></span>
+                    <span>Boarding by Inquiry</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About Section - Symmetrical 3 Cards -->
     <section id="about" class="section">
         <div class="container">
-            <h2 class="section-title">Why Southlea Park Technical Academy?</h2>
+            <h2 class="section-title">Why Grace Southlea Park Technical College?</h2>
             <div class="about-grid">
                 <div class="about-card">
-                    <div class="card-icon">🎓</div>
-                    <h3>Academic Excellence</h3>
-                    <p>International high school syllabus (IGCSE & A-Level) preparing students for global opportunities</p>
+                    <div class="card-icon"><i class="fa-solid fa-book-open-reader" style="color: var(--primary);"></i></div>
+                    <h3>Full ZIMSEC Curriculum & Cambridge Electives</h3>
+                    <p>Comprehensive academic disciplines across sciences, commercial arts, and humanities, preparing learners for top national ZIMSEC qualifications with Cambridge IGCSE options.</p>
                 </div>
                 <div class="about-card">
-                    <div class="card-icon">🔧</div>
-                    <h3>Technical Skills</h3>
-                    <p>Hands-on vocational training in motor assembly, food processing, marine technology, and more</p>
+                    <div class="card-icon"><i class="fa-solid fa-industry" style="color: var(--primary);"></i></div>
+                    <h3>Applied Manufacturing Mastery</h3>
+                    <p>Real hands-on secondary training in food manufacturing, domestic appliance production, electronics, metalwork, woodwork, and solar engineering designed for Zimbabwe's economic landscape.</p>
                 </div>
                 <div class="about-card">
-                    <div class="card-icon">💼</div>
-                    <h3>Career Ready</h3>
-                    <p>Graduate job-ready with both academic qualifications and marketable practical skills</p>
-                </div>
-                <div class="about-card">
-                    <div class="card-icon">🌟</div>
-                    <h3>Character Development</h3>
-                    <p>Leadership training, entrepreneurship, and values-based education for holistic growth</p>
+                    <div class="card-icon"><i class="fa-solid fa-handshake" style="color: var(--primary);"></i></div>
+                    <h3>Wealth Creation & Industry Placements</h3>
+                    <p>Practical enterprise literacy, mandatory student industry placements, and disciplined character building ensuring school leavers produce wealth rather than seek employment.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Differentiators Section -->
+    <!-- Comprehensive Subjects & Curriculum Section -->
+    <section id="curriculum" class="section" style="background: white;">
+        <div class="container">
+            <h2 class="section-title">Academic Curriculum & Technical Trades</h2>
+            <p style="text-align: center; max-width: 850px; margin: -20px auto 40px auto; color: #718096;">
+                A balanced secondary education combining standard ZIMSEC academic excellence with applied technical disciplines, agriculture, design, and practical workshop trades.
+            </p>
+
+            <div class="about-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;">
+                <!-- Regular Academic Core -->
+                <div class="about-card" style="text-align: left;">
+                    <div class="card-icon" style="text-align: center;"><i class="fa-solid fa-atom" style="color: var(--primary);"></i></div>
+                    <h3 style="text-align: center;">Sciences & Mathematics</h3>
+                    <ul style="list-style: none; padding-left: 0; line-height: 1.8;">
+                        <li><i class="fa-solid fa-check" style="color: var(--success); margin-right: 8px;"></i> Mathematics</li>
+                        <li><i class="fa-solid fa-check" style="color: var(--success); margin-right: 8px;"></i> Combined Science</li>
+                        <li><i class="fa-solid fa-check" style="color: var(--success); margin-right: 8px;"></i> Pure Biology</li>
+                        <li><i class="fa-solid fa-check" style="color: var(--success); margin-right: 8px;"></i> Pure Chemistry</li>
+                        <li><i class="fa-solid fa-check" style="color: var(--success); margin-right: 8px;"></i> Pure Physics</li>
+                        <li><i class="fa-solid fa-check" style="color: var(--success); margin-right: 8px;"></i> Geology & Earth Sciences</li>
+                    </ul>
+                </div>
+
+                <!-- Languages & Humanities -->
+                <div class="about-card" style="text-align: left;">
+                    <div class="card-icon" style="text-align: center;"><i class="fa-solid fa-landmark" style="color: var(--primary);"></i></div>
+                    <h3 style="text-align: center;">Languages, Arts & Business</h3>
+                    <ul style="list-style: none; padding-left: 0; line-height: 1.8;">
+                        <li><i class="fa-solid fa-check" style="color: var(--success); margin-right: 8px;"></i> English Language</li>
+                        <li><i class="fa-solid fa-check" style="color: var(--success); margin-right: 8px;"></i> ChiShona Language & Heritage</li>
+                        <li><i class="fa-solid fa-check" style="color: var(--success); margin-right: 8px;"></i> Literature in English</li>
+                        <li><i class="fa-solid fa-check" style="color: var(--success); margin-right: 8px;"></i> History & Heritage Studies</li>
+                        <li><i class="fa-solid fa-check" style="color: var(--success); margin-right: 8px;"></i> Geography</li>
+                        <li><i class="fa-solid fa-check" style="color: var(--success); margin-right: 8px;"></i> Divinity / Religious Studies</li>
+                        <li><i class="fa-solid fa-check" style="color: var(--success); margin-right: 8px;"></i> Management of Business (MOB)</li>
+                    </ul>
+                </div>
+
+                <!-- Practical Technical & Vocational Subjects -->
+                <div class="about-card" style="text-align: left;">
+                    <div class="card-icon" style="text-align: center;"><i class="fa-solid fa-compass-drafting" style="color: var(--primary);"></i></div>
+                    <h3 style="text-align: center;">Technical, Vocational & Agro</h3>
+                    <ul style="list-style: none; padding-left: 0; line-height: 1.8;">
+                        <li><i class="fa-solid fa-check" style="color: var(--success); margin-right: 8px;"></i> Agriculture & Horticulture</li>
+                        <li><i class="fa-solid fa-check" style="color: var(--success); margin-right: 8px;"></i> Metalwork & Fabrication</li>
+                        <li><i class="fa-solid fa-check" style="color: var(--success); margin-right: 8px;"></i> Woodwork & Carpentry</li>
+                        <li><i class="fa-solid fa-check" style="color: var(--success); margin-right: 8px;"></i> Building Studies & Architecture</li>
+                        <li><i class="fa-solid fa-check" style="color: var(--success); margin-right: 8px;"></i> Food and Nutrition</li>
+                        <li><i class="fa-solid fa-check" style="color: var(--success); margin-right: 8px;"></i> Fashion and Fabrics (Textiles)</li>
+                        <li><i class="fa-solid fa-check" style="color: var(--success); margin-right: 8px;"></i> Full ZIMSEC Syllabi Available</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Differentiators Section - 6 Balanced Items -->
     <section class="differentiators">
         <div class="container">
             <h2 class="section-title">What Makes Us Different</h2>
             <div class="diff-grid">
                 <div class="diff-item">
                     <span class="diff-number">01</span>
-                    <h3>Complete Meal Program</h3>
-                    <p>Nutritious breakfast, break-time snack, and lunch provided daily. No child goes hungry at SPTA.</p>
+                    <h3>Complete 3-Meal Dining Program</h3>
+                    <p>Nutritious breakfast, mid-morning snack, and hot cooked lunch provided daily for all students, with full dinner service for our boarding community.</p>
                 </div>
                 <div class="diff-item">
                     <span class="diff-number">02</span>
-                    <h3>Digital Learning Platform</h3>
-                    <p>All learning content digitized. Students get tablets with access to lessons, homework, and revision materials 24/7.</p>
+                    <h3>Digitised Plan Books & 24/7 Lesson Revision</h3>
+                    <p>All curriculum lessons and teacher plan books are digitised. Students use their school-issued tablets to review classroom notes and digital whiteboard sessions anytime.</p>
                 </div>
                 <div class="diff-item">
                     <span class="diff-number">03</span>
-                    <h3>International Exposure</h3>
-                    <p>Educational trips within Africa and beyond. Foreign language programs. Global perspective.</p>
+                    <h3>Global Tours: Europe, Asia, Americas & Africa</h3>
+                    <p>Curated international academic expeditions, university immersions, and cultural tours across Europe, Asia, the Americas, and Africa for genuine global exposure.</p>
                 </div>
                 <div class="diff-item">
                     <span class="diff-number">04</span>
-                    <h3>Real-Time Parent Updates</h3>
-                    <p>Digital leaderboards, instant attendance notifications, academic progress tracking via parent portal.</p>
+                    <h3>Real-Time Parent Ecosystem & In-App Messaging</h3>
+                    <p>Direct in-app messaging with subject teachers, instant attendance alerts, digital leaderboards, and live academic progress tracking via the Parent Portal.</p>
                 </div>
                 <div class="diff-item">
                     <span class="diff-number">05</span>
-                    <h3>Technology Integration</h3>
-                    <p>High-speed internet access, computer labs, tablets for every student. Preparing digital natives.</p>
+                    <h3>Safe Dedicated Transport & Wi-Fi</h3>
+                    <p>Reliable day scholar transport with GPS tracking, alongside campus-wide high-speed wireless coverage powering student tablets and digital research.</p>
                 </div>
                 <div class="diff-item">
                     <span class="diff-number">06</span>
-                    <h3>Safe Transport</h3>
-                    <p>Reliable school transport with GPS tracking. Parents receive entry/exit notifications.</p>
+                    <h3>Unbroken Utilities: 100% Solar & Borehole</h3>
+                    <p>Continuous hybrid solar electricity and on-site borehole water supply with elevated storage, ensuring zero downtime for studies, laboratories, or hostels.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Programs Section -->
+    <!-- Programs Section - Symmetrical 3 Columns -->
     <section id="programs" class="section programs-section">
         <div class="container">
-            <h2 class="section-title">Our Programs</h2>
+            <h2 class="section-title">Academic & Technical Tracks (Forms 1 to 4)</h2>
+            <p style="text-align: center; max-width: 800px; margin: -20px auto 40px auto; color: #718096;">
+                Now enrolling Forms 1 through 4 for our Day School launch. Advance registrations and term fees are currently being accepted.
+            </p>
             <div class="programs-grid">
-                <div class="program-card">
-                    <div class="program-header" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                        <h3>Form 1-4 (IGCSE)</h3>
-                        <p class="price">$200/term</p>
-                    </div>
-                    <div class="program-body">
-                        <ul class="program-features">
-                            <li>✓ Cambridge IGCSE Curriculum</li>
-                            <li>✓ Vocational Skills Integration</li>
-                            <li>✓ Digital Learning Materials</li>
-                            <li>✓ Daily Meals Included</li>
-                            <li>✓ Tablet Provided</li>
-                            <li>✓ Small Classes (Max 16 students)</li>
-                        </ul>
-                        <a href="register.html" class="btn btn-primary">Apply Now</a>
-                    </div>
-                </div>
-
+                <!-- Day Scholar Form 1-4 -->
                 <div class="program-card featured">
-                    <div class="featured-badge">Most Popular</div>
-                    <div class="program-header" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
-                        <h3>Form 5-6 (A-Level)</h3>
-                        <p class="price">$300/term</p>
+                    <div class="featured-badge">Launch Program</div>
+                    <div class="program-header" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <h3>Day Scholar (Forms 1-4)</h3>
+                        <p class="price">$300 / term</p>
                     </div>
                     <div class="program-body">
                         <ul class="program-features">
-                            <li>✓ Cambridge A-Level Curriculum</li>
-                            <li>✓ Professional Qualifications Track</li>
-                            <li>✓ Advanced Technical Skills</li>
-                            <li>✓ Daily Meals Included</li>
-                            <li>✓ Tablet Provided</li>
-                            <li>✓ University Preparation</li>
-                            <li>✓ Career Mentorship</li>
+                            <li><i class="fa-solid fa-check" style="color: var(--success); margin-right: 8px;"></i> Full ZIMSEC Subjects & Cambridge Electives</li>
+                            <li><i class="fa-solid fa-check" style="color: var(--success); margin-right: 8px;"></i> Daily Nutritious Cooked Midday Lunch</li>
+                            <li><i class="fa-solid fa-check" style="color: var(--success); margin-right: 8px;"></i> Personal Student Tablet & Digital Plan Books</li>
+                            <li><i class="fa-solid fa-check" style="color: var(--success); margin-right: 8px;"></i> High-Speed Campus Wi-Fi & Science Labs</li>
+                            <li><i class="fa-solid fa-check" style="color: var(--success); margin-right: 8px;"></i> Supervised Afternoon Prep & Practical Workshops</li>
+                            <li><i class="fa-solid fa-check" style="color: var(--success); margin-right: 8px;"></i> Safe Dedicated Transport Available ($1/day)</li>
                         </ul>
-                        <a href="register.html" class="btn btn-primary">Apply Now</a>
+                        <a href="register.html" class="btn btn-primary">Apply as Day Scholar</a>
                     </div>
                 </div>
 
+                <!-- Secondary Technical Manufacturing & Placements -->
                 <div class="program-card">
-                    <div class="program-header" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
-                        <h3>Vocational Programs</h3>
-                        <p class="price">Custom</p>
+                    <div class="program-header" style="background: linear-gradient(135deg, #00b894 0%, #0984e3 100%);">
+                        <h3>Technical & Manufacturing Tracks</h3>
+                        <p class="price">Zimbabwe Contextual</p>
                     </div>
                     <div class="program-body">
                         <ul class="program-features">
-                            <li>✓ Motor Assembly & Maintenance</li>
-                            <li>✓ Food Processing Technology</li>
-                            <li>✓ Marine Technology</li>
-                            <li>✓ Computer Programming</li>
-                            <li>✓ Renewable Energy Systems</li>
-                            <li>✓ Certificate Programs</li>
+                            <li><i class="fa-solid fa-check" style="color: var(--success); margin-right: 8px;"></i> Food Manufacturing, Processing & Agro-Tech</li>
+                            <li><i class="fa-solid fa-check" style="color: var(--success); margin-right: 8px;"></i> Computer Programming, Web Tech & Robotics</li>
+                            <li><i class="fa-solid fa-check" style="color: var(--success); margin-right: 8px;"></i> Renewable Energy Systems & Solar Design</li>
+                            <li><i class="fa-solid fa-check" style="color: var(--success); margin-right: 8px;"></i> Electronics & Electrical Circuits</li>
+                            <li><i class="fa-solid fa-check" style="color: var(--success); margin-right: 8px;"></i> Daily Domestic & Commercial Appliances Assembly</li>
+                            <li><i class="fa-solid fa-check" style="color: var(--success); margin-right: 8px;"></i> Structured Student Industry Placements</li>
                         </ul>
-                        <a href="register.html" class="btn btn-primary">Inquire</a>
+                        <a href="register.html" class="btn btn-primary">Inquire Tracks</a>
+                    </div>
+                </div>
+
+                <!-- Residential Boarding by Inquiry -->
+                <div class="program-card">
+                    <div class="program-header" style="background: linear-gradient(135deg, #1b365d 0%, #2563eb 100%);">
+                        <h3>Residential Boarding Suites</h3>
+                        <p class="price">By Inquiry</p>
+                    </div>
+                    <div class="program-body">
+                        <ul class="program-features">
+                            <li><i class="fa-solid fa-check" style="color: var(--success); margin-right: 8px;"></i> Full Term & Weekly (Sun-Fri) Options Available</li>
+                            <li><i class="fa-solid fa-check" style="color: var(--success); margin-right: 8px;"></i> Dedicated Single-Storey Boys & Girls Wings</li>
+                            <li><i class="fa-solid fa-check" style="color: var(--success); margin-right: 8px;"></i> 3 Hot Balanced Meals Daily in Dining Hall</li>
+                            <li><i class="fa-solid fa-check" style="color: var(--success); margin-right: 8px;"></i> Enclosed Hot Shower & Ablution Facilities</li>
+                            <li><i class="fa-solid fa-check" style="color: var(--success); margin-right: 8px;"></i> 24/7 Resident Matron & Boarding Master</li>
+                            <li><i class="fa-solid fa-check" style="color: var(--success); margin-right: 8px;"></i> Supervised Evening Academic Prep</li>
+                        </ul>
+                        <a href="https://wa.me/263XXXXXXXXX?text=Hello%20GSTC%2C%20I%20would%20like%20to%20inquire%20about%20boarding%20accommodation%20for%20Form%201-4" class="btn btn-secondary" style="border: 1px solid var(--primary);">Inquire Boarding</a>
                     </div>
                 </div>
             </div>
 
             <div class="pricing-note">
-                <p><strong>Additional Fees:</strong> Registration: $50 (one-time) | Tablet: $150 (one-time) | Transport: $1/day (optional)</p>
+                <p><strong>Launch Fee Structure:</strong> Tuition: <strong>$300 per term</strong> | Registration Fee: <strong>$100 (one-time)</strong> | Student Tablet: <strong>$150 (one-time)</strong> | Transport: <strong>$1/day (optional)</strong></p>
             </div>
         </div>
     </section>
@@ -195,63 +270,97 @@
     <!-- Facilities Section -->
     <section id="facilities" class="section">
         <div class="container">
-            <h2 class="section-title">World-Class Facilities</h2>
+            <h2 class="section-title">World-Class Campus Facilities</h2>
             <div class="facilities-grid">
                 <div class="facility-card">
-                    <span class="facility-icon">🔬</span>
+                    <span class="facility-icon"><i class="fa-solid fa-flask-vial" style="color: var(--primary);"></i></span>
                     <h3>Science Laboratories</h3>
-                    <p>Fully equipped physics, chemistry, and biology labs for hands-on experiments</p>
+                    <p>Fully equipped practical physics, chemistry, and biology labs with specialized apparatus for ZIMSEC and Cambridge practical coursework.</p>
                 </div>
                 <div class="facility-card">
-                    <span class="facility-icon">🔧</span>
-                    <h3>Technical Workshops</h3>
-                    <p>Motor assembly, food processing, and marine technology training facilities</p>
+                    <span class="facility-icon"><i class="fa-solid fa-building" style="color: var(--primary);"></i></span>
+                    <h3>350m² Multipurpose Hall</h3>
+                    <p>Grand central superstructure housing dining refectory, student assembly hall, and conference facilities.</p>
                 </div>
                 <div class="facility-card">
-                    <span class="facility-icon">💻</span>
-                    <h3>Computer Labs</h3>
-                    <p>High-speed internet, modern computers, programming and design software</p>
+                    <span class="facility-icon"><i class="fa-solid fa-screwdriver-wrench" style="color: var(--primary);"></i></span>
+                    <h3>Technical & Manufacturing Workshops</h3>
+                    <p>State-of-the-art innovation spaces for electronics, appliance assembly, food processing, woodwork, metalwork, and renewable technology.</p>
                 </div>
                 <div class="facility-card">
-                    <span class="facility-icon">📚</span>
-                    <h3>Digital Library</h3>
-                    <p>Extensive collection of e-books, research materials, and learning resources</p>
+                    <span class="facility-icon"><i class="fa-solid fa-laptop-code" style="color: var(--primary);"></i></span>
+                    <h3>Computer Labs & Wi-Fi</h3>
+                    <p>Interactive teacher boards, digital plan book synchronisation, and reliable campus-wide wireless coverage for student tablets.</p>
                 </div>
                 <div class="facility-card">
-                    <span class="facility-icon">🍽️</span>
-                    <h3>Dining Hall</h3>
-                    <p>Clean, modern cafeteria serving nutritious meals throughout the day</p>
+                    <span class="facility-icon"><i class="fa-solid fa-solar-panel" style="color: var(--primary);"></i></span>
+                    <h3>100% Solar & Borehole Independence</h3>
+                    <p>High-capacity solar array backed by grid redundancy and prolific borehole with 5,000L elevated water storage.</p>
                 </div>
                 <div class="facility-card">
-                    <span class="facility-icon">⚡</span>
-                    <h3>Solar Power</h3>
-                    <p>100% renewable energy campus with backup systems for uninterrupted learning</p>
+                    <span class="facility-icon"><i class="fa-solid fa-futbol" style="color: var(--primary);"></i></span>
+                    <h3>Dedicated Sports Facility in Prospect</h3>
+                    <p>Exclusive access to our owned, fully equipped sports grounds in Prospect, supporting football, athletics, basketball, volleyball, and tennis disciplines.</p>
+                </div>
+                <div class="facility-card">
+                    <span class="facility-icon"><i class="fa-solid fa-bed" style="color: var(--primary);"></i></span>
+                    <h3>Pastoral Residential Wings</h3>
+                    <p>Modern single-storey boys' and girls' boarding wings with private ensuite hot showers, secure gated compounds, and 24/7 staff care.</p>
+                </div>
+                <div class="facility-card">
+                    <span class="facility-icon"><i class="fa-solid fa-kit-medical" style="color: var(--primary);"></i></span>
+                    <h3>Campus Healthcare Sick Bay</h3>
+                    <p>Dedicated medical room with observation beds for rapid first aid and health supervision overseen by resident pastoral staff.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Admissions Section -->
+    <!-- Public Portals Section - Strictly Parent & Student Only -->
+    <section id="portals" class="section" style="background: white;">
+        <div class="container">
+            <h2 class="section-title">Digital Campus Portals</h2>
+            <p style="text-align: center; max-width: 800px; margin: -20px auto 10px auto; color: #718096;">
+                Secure digital access for students and families to stay seamlessly connected with school life.
+            </p>
+            <div class="portal-dual-grid">
+                <div class="portal-box">
+                    <span class="portal-box-icon"><i class="fa-solid fa-tablet-screen-button" style="color: var(--primary);"></i></span>
+                    <h4>Student Portal</h4>
+                    <p>Access your digitized plan books, review past recorded whiteboard lessons, view assignments, and access curriculum resources on your school tablet.</p>
+                    <a href="login.html" class="btn btn-primary">Student Login &rarr;</a>
+                </div>
+                <div class="portal-box">
+                    <span class="portal-box-icon"><i class="fa-solid fa-users-rectangle" style="color: var(--primary);"></i></span>
+                    <h4>Parent Portal</h4>
+                    <p>Direct in-app messaging with teachers, real-time attendance alerts, automated electronic fee statements, instant billing, and student gradebooks.</p>
+                    <a href="login.html" class="btn btn-primary">Parent Login &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admissions Section - Exact 6-Step Admission Process Restored -->
     <section id="admissions" class="section admissions-section">
         <div class="container">
-            <h2 class="section-title">Admissions Open for January 2026</h2>
+            <h2 class="section-title">Admissions Open for Forms 1 to 4</h2>
             <div class="admissions-content">
                 <div class="admissions-info">
                     <h3>Admission Requirements</h3>
                     <ul class="requirements-list">
-                        <li>✓ Birth certificate (certified copy)</li>
-                        <li>✓ Previous school reports (Forms 1-4) or O-Level results (Forms 5-6)</li>
-                        <li>✓ Medical records and immunization certificate</li>
-                        <li>✓ Two recent passport photos</li>
-                        <li>✓ Proof of residence</li>
-                        <li>✓ Parent/guardian ID copy</li>
+                        <li><i class="fa-solid fa-check" style="color: var(--success); margin-right: 8px;"></i> Birth certificate (certified copy)</li>
+                        <li><i class="fa-solid fa-check" style="color: var(--success); margin-right: 8px;"></i> Previous school reports (Forms 1-4) or Grade 7 results</li>
+                        <li><i class="fa-solid fa-check" style="color: var(--success); margin-right: 8px;"></i> Medical records and immunization certificate</li>
+                        <li><i class="fa-solid fa-check" style="color: var(--success); margin-right: 8px;"></i> Two recent passport photos</li>
+                        <li><i class="fa-solid fa-check" style="color: var(--success); margin-right: 8px;"></i> Proof of residence</li>
+                        <li><i class="fa-solid fa-check" style="color: var(--success); margin-right: 8px;"></i> Parent/guardian ID copy</li>
                     </ul>
                     
                     <h3 style="margin-top: 30px;">Admission Process</h3>
                     <ol class="process-list">
                         <li>Complete online application form</li>
                         <li>Submit required documents</li>
-                        <li>Pay registration fee ($50)</li>
+                        <li>Pay registration fee ($100)</li>
                         <li>Attend orientation session</li>
                         <li>Complete payment for first term</li>
                         <li>Collect student ID and QR card</li>
@@ -261,12 +370,13 @@
                 <div class="admissions-cta">
                     <div class="cta-box">
                         <h3>Ready to Apply?</h3>
-                        <p>Spaces are limited to 16 students per class. Apply early to secure your child's spot.</p>
+                        <p>Forms 1 to 4 day school enrollment is currently underway. Spaces are allocated on a first-come, first-served basis upon registration.</p>
                         <a href="register.html" class="btn btn-large btn-primary">Start Application</a>
                         
                         <div class="cta-note">
-                            <p><strong>Need Help?</strong></p>
-                            <p>Visit our office Monday-Friday, 8am-4pm for assisted registration</p>
+                            <p><strong>Fees & Admissions Assistance</strong></p>
+                            <p>Tuition: $300 / term | Registration: $100 | Tablet: $150</p>
+                            <p>Visit our office Monday - Friday, 8:00 AM - 4:30 PM for assisted registration</p>
                         </div>
                     </div>
                 </div>
@@ -281,28 +391,28 @@
             <div class="contact-grid">
                 <div class="contact-info">
                     <div class="contact-item">
-                        <span class="contact-icon">📍</span>
+                        <span class="contact-icon"><i class="fa-solid fa-location-dot" style="color: var(--primary);"></i></span>
                         <div>
                             <h4>Location</h4>
                             <p>Southlea Park, Harare, Zimbabwe</p>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <span class="contact-icon">📞</span>
+                        <span class="contact-icon"><i class="fa-solid fa-phone" style="color: var(--primary);"></i></span>
                         <div>
-                            <h4>Phone</h4>
+                            <h4>Phone & WhatsApp</h4>
                             <p>+263 XX XXX XXXX</p>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <span class="contact-icon">📧</span>
+                        <span class="contact-icon"><i class="fa-solid fa-envelope" style="color: var(--primary);"></i></span>
                         <div>
                             <h4>Email</h4>
                             <p>admissions@spta.edu.zw</p>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <span class="contact-icon">⏰</span>
+                        <span class="contact-icon"><i class="fa-solid fa-clock" style="color: var(--primary);"></i></span>
                         <div>
                             <h4>Office Hours</h4>
                             <p>Monday - Friday: 8:00 AM - 4:00 PM</p>
@@ -329,29 +439,38 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>Southlea Park Technical Academy</h4>
+                    <h4>Grace Southlea Park Technical College</h4>
                     <p>From Knowledge to Wealth Creation</p>
-                    <p>Empowering Zimbabwe's Future</p>
+                    <p>Empowering Zimbabwe's youth through ZIMSEC academic rigor, Cambridge electives, practical technical skills, and secondary education.</p>
                 </div>
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <a href="#about">About Us</a>
-                    <a href="#programs">Programs</a>
-                    <a href="#facilities">Facilities</a>
+                    <a href="#programs">Academic Streams</a>
+                    <a href="#curriculum">Subjects & Skills</a>
+                    <a href="venue-hire.html">Venue & Event Hire</a>
+                    <a href="#facilities">Campus Facilities</a>
                     <a href="register.html">Apply Now</a>
                 </div>
                 <div class="footer-section">
-                    <h4>Information</h4>
-                    <a href="#admissions">Admissions</a>
+                    <h4>Portals & Information</h4>
+                    <a href="#portals">Student & Parent Portals</a>
+                    <a href="#admissions">Admissions Process</a>
                     <a href="#contact">Contact Us</a>
                     <a href="login.html">Portal Login</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Southlea Park Technical Academy. All rights reserved.</p>
+                <p>&copy; 2026 Grace Southlea Park Technical College. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
+    <!-- Floating WhatsApp Admissions Button -->
+    <a href="https://wa.me/263XXXXXXXXX?text=Hello%20GSTC%2C%20I%20am%20inquiring%20about%20Forms%201%20to%204%20day%20school%20enrollment" class="whatsapp-float" target="_blank" rel="noopener">
+        <i class="fa-brands fa-whatsapp fa-lg"></i>
+        <span>Chat on WhatsApp</span>
+    </a>
 
     <script src="js/public.js"></script>
 </body>
